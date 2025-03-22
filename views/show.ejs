@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in Detail</title>
+    <style>
+        body{
+    
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+.content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.post{
+    margin: 0 auto;
+    width: 30%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Here is your Post in detail</h2>
+        <div class="post">
+            <h3> @<%= post.title %> </h3>
+            <img src="<%= post.Image %>" alt="Photo">
+            <p> <%= post.content %> </p>
+            
+        </div>
+</body>
+</html>
